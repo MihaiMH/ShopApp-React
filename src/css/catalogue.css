@@ -1,0 +1,139 @@
+body{
+    overflow:visible;
+}
+
+.items{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+.footerhome{
+    position:fixed;
+}
+
+.item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:15px;
+    width:200px;
+    height:280px;
+   background-color: rgba(212, 207, 207, 0.116);
+    color:white;
+}
+
+.item button{
+    width:100%;
+    padding:5px 0;
+    background-color: rgb(247, 244, 239);
+    border:0;
+}
+
+.item button:hover{
+    background-color: rgb(109, 107, 104);
+}
+.sort{
+    margin-bottom:10px;
+}
+
+.item h3{
+    font-size:20px;
+}
+
+.space{
+    height:10px;
+}
+.items{
+    margin-bottom: 50px;
+}
+
+.item img{
+    height:150px;
+    width:100%;
+}
+
+.sort{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10px;
+}
+
+.sort p{
+    padding-top:10px;
+}
+
+.dropdowns{
+    display:flex;
+    flex-flow:row wrap;
+    margin-right:5%;
+}
+
+.sort .dropdown{
+    margin:5px 3px;
+}
+
+.dropdown button{
+    border:0;
+    background-color: rgba(155, 180, 182, 0.582);
+}
+
+
+.dropdown button:hover{
+    border:0;
+    background-color: rgba(155, 180, 182, 0.925);
+}
+
+.sort-right{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.sort-category{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sort-category p{
+    margin-right:20px;
+    width:100px;
+}
+
+.hidden{
+    display:none;
+}
+
+@media screen and (max-width:1305px) {
+    .sort{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:462px) {
+    .sort-category{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .sort .dropdown{
+        margin:0;
+    }
+
+    .sort-category p{
+        margin-right:20px;
+        width:100px;
+    }
+}

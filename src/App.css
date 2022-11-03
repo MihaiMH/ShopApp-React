@@ -1,38 +1,115 @@
-.App {
+html{
+  position: relative;
+  margin:0;
+  padding:0;
+}
+
+body{
+  height:100vh;
+  margin:0;
+  padding:0;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.navbar{
+  background-color: rgba(151, 151, 153, 0.541);
+}
+
+.nav-align{
+  display:flex;
+  flex-direction: row;
+}
+
+.txt{
+  margin:0 10px;
+}
+
+
+@media screen and (max-width:575px){
+  .nav-align{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+}
+
+.txt{
+  color:white;
+  transform:scale(1);
+  transition:0.3s linear;
+}
+
+.txt:hover{
+  transform:scale(1.2);
+  transition:0.3s linear;
+  color:white;
+}
+
+
+.footerhome{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px; 
+  background-color: rgba(151, 151, 153, 0.541);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.navmarg{
+  margin-left:30px;
+}
+
+.navbar button{
+  margin-right:30px;
+}
+
+
+.container-fluid{
+  height:100%;
+  margin:0;
+  padding:0;
+  
+}
+
+.container-fluid{
+  height:100%;
+  margin:0;
+  padding:0;
+  
+}
+
+.shopCart{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: rgba(85, 85, 88, 0.26);
+  border-radius:10px;
+  padding:0 13px;
+}
+
+.shopCart:hover{
+  background-color: rgba(151, 151, 155, 0.815);
+}
+
+.shopCart p{
+  margin-left:5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shopCart img{
+  height:30px;
 }
